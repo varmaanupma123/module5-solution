@@ -1,0 +1,268 @@
+body{
+	background-color:#FFDAB9;
+	color:white;
+	font-size:20px;
+}
+/* HEADER */
+#header-nav{
+	background-color:rosybrown;
+	border-radius: 0;
+	border:0;
+}
+#logo-img{
+	width:200px;
+	height: 150px;
+	margin-left:-20px;
+}
+.navbar-brand{
+	padding-top:35px;
+}
+.navbar-brand h1{
+	color: lavender;
+	font-size: 1.5em;
+	font-family: 'Sofia';font-size: 35px;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #DA70D6;
+	margin-top: 10px;
+	line-height:.75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration:none;
+}
+.navbar-brand a span{
+	color:#000;
+	font-size:.7em;
+	margin-top:-10px;
+	vertical-align:middle;
+}
+#nav-list{
+	margin-top:10px;
+}
+#nav-list a{
+	color:#FFDAB9;
+	text-align:center;
+	font-size:12px;
+}
+#nav-list a:hover{
+	background: snow;
+	border-radius:30px;
+}
+#nav-list a span{
+	font-size:1.8em;
+}
+#phone{
+	margin-top: 5px;
+}
+#phone a{/* phone number*/
+	text-align: right;
+	padding-bottom:0;
+}
+#phone div{/* contact-us*/
+	color: white;
+	font-size:11px;
+	text-align: right;
+	padding-right:17px;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+	border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle{
+	clear: both;
+	margin-top:-30px;
+	
+}
+/* END HEADER */
+
+/* Footer */
+.panel-footer{
+	margin-top: 30px;
+	padding-top:35px;
+	padding-bottom:30px;
+	background-color:rosybrown;
+	border-top:0;
+}
+.panel-footer div.row{
+	margin-bottom:35px;
+	font-size:15px;
+	margin-left:-30px;
+	margin-right:30px;
+}
+#hours > span, #address > span{
+	font-size:1.3em;
+	color: Brown;
+}
+#address p{
+	color: #557c3e;
+	font-size: .8em;
+	line-height: 1.2;
+}
+#reviews{
+	font-style: italic;
+	color:lightcyan;
+}
+#reviews p:nth-child(2){
+	margin-top:25px;
+}
+/* End Footer */
+/* Home Page */
+.container .jumbotron{
+	background-repeat:no-repeat;
+	box-shadow: 0 0 50px rosybrown;
+	border: 2px solid rosybrown;
+}
+#menu-title, #special-title, #map-title{
+	height:250px;
+	width:100%;
+	margin-bottom:15px;
+	position: relative;
+	border:2px solid rosybrown;
+	overflow: hidden;
+	color:lime;
+}
+#menu-title:hover, #special-title:hover, #map-title:hover{
+	box-shadow: 0 2px 5px 1px rosybrown;
+}
+#menu-title{
+	background-image: url('menuitm.jpg');
+	background-size:350px;
+	background-repeat: no-repeat;
+	background-position:center;
+}
+#special-title{
+	background-image: url('special.jpg');
+	background-size:440px;
+	background-repeat: no-repeat;
+	background-position:center;
+}
+#menu-title span, #special-title span, #map-title span{
+	position:absolute;
+	bottom:0;
+	right:0;
+	width:100%;
+	text-align:center;
+	font-size:1.6em;
+	text-transform: uppercase;
+	background-color:#000;
+	color:plum;
+	opacity: .8;
+}
+/* End Home Page */
+
+/*Menu Categories page */
+.category-title{
+	position: relative;
+	border: 2px solid #3F0C1F;
+	overflow: hidden;
+	width:200px;
+	height:200px; 
+	margin: 0 auto 15px;
+}
+.category-title span{
+	position: absolute;
+	bottom:0;
+	right:0;
+	width:100%;
+	text-align: center;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	background-color:#000;
+	color:#fff;
+}
+.category-title:hover{
+	box-shadow: 0 1px 5px 1px rosybrown;
+}
+.menu-category-title+div{
+	margin-bottom:50px;
+}
+/* End menu categories page */
+
+/********Large devices only ********/
+@media only screen and (min-width: 1200px){
+	.container .jumbotron{
+		background-image: url('img-1200px.jpg'); 
+		height: 675px;
+	}
+	
+}
+
+/********Medium devices only ********/
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+	/* Header */
+	#logo-img{
+		width: 150px;
+		height: 120px;
+		margin: 5px 5px 5px -40px;
+	}
+	/* End Header */
+	
+	.container .jumbotron{
+		background-image: url('img-991px.jpg');
+		height: 558px;
+	}
+}
+/********Small devices only ********/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+	.navbar-brand h1{
+		margin-top:5px;
+	}
+	.container .jumbotron{
+		background-image: url('img-768px.jpg');
+		height: 452px;
+	}
+}
+/********Extra-Small devices only ********/
+@media only screen and (max-width: 767px){
+	.navbar-brand{
+		padding-top: 10px;
+		height: 80px;
+	}
+	.navbar-brand h1{ /* Restursnt name */
+		padding-top: 10px;
+		font-size: 5vw;	/*1 vw= 1% of viewport width */	
+	}
+	.navbar-brand p{ /* respect */
+		font-size:.5em;
+		margin-top: 5px;
+	}
+	#collapsable-nav a{/* collapsable nav menu glyph */
+		font-size: 20px;
+	}
+	#collapsable-nav a span{
+		font-size:1em;
+		margin-right:5px;
+	}
+	.container .jumbotron{
+		padding:0;
+	}
+	#menu-title, #special-title{
+		width:350px;
+		margin: 0 auto 15px;
+	}
+	.panel-footer section{
+		margin-bottom:30px;
+		text-align:center;
+	}
+	/* footer */
+	.panel-footer section:nth-child(3){
+		margin-bottom:0;
+	}
+	.panel-footer section hr{
+		width: 50%;
+	}
+}
+
+/******** Super extra small devices (e.g. iphone etc.) ********/
+@media only screen and (max-width: 479px){
+	#menu-title, #special-title{
+		width: 280px;
+		margin: 0 auto 15px;
+	}
+	.col-xxs-12{
+		position: relative;
+		min-height: 1px;
+		padding-left:15px;
+		padding-right: 15px;
+		float:left;
+		width:100%;
+	}
+}
